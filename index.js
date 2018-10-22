@@ -25,7 +25,7 @@ function calculatesFarePrice(a, b) {
   if (distance < 400) {
     return 0;
   } else if (distance >= 400 && distance <= 2000) {
-    return ((distance * 0.02) - (400 * 0.02)).toFixed(2)
+    return parseFloat(((distance * 0.02) - (400 * 0.02)).toFixed(2))
   } else {
     return 'cannot travel that far';
   }
